@@ -2,7 +2,8 @@
 function BubbleSort(arr) {
   //make a nested for loop
   for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr.length; j++) {
+    //this for loop will be behind from the first for loop
+    for (let j = 0; j < arr.length - i; j++) {
       //check if index i > index j:
       if (arr[j] > arr[j + 1]) {
         //make a temporal variable and store the greater value
